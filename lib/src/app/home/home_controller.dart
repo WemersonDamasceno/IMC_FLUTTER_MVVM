@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:imc_mvvm_flutter/src/app/pessoa_model.dart';
 import 'package:rx_notifier/rx_notifier.dart';
 
-class HomeController extends ChangeNotifier {
+class HomeController {
   double _altura = 0.0;
   double _peso = 0.0;
 
@@ -22,6 +21,5 @@ class HomeController extends ChangeNotifier {
     } else {
       _result.value = "O imc é $imcText e voce está bem MAL!";
     }
-    notifyListeners();
   }
 }
